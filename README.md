@@ -56,7 +56,6 @@ python digit_cnn.py     # for CNN model
 Accuracy and loss plots
 Confusion matrix (CNN version)
 
-
 ## 🛠️ Technologies Used
 Python
 TensorFlow / Keras
@@ -69,6 +68,7 @@ Created by https://github.com/Yul04ek
 
 
 This project is licensed under the MIT License.
+
 
 
 
