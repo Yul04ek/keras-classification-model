@@ -46,29 +46,34 @@ This project demonstrates two approaches to classifying handwritten digits (0–
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## 🚀 Run
+
+```bash
 python digit_dense.py   # for Dense model
 python digit_cnn.py     # for CNN model
+```
 
 ## 📈 Evaluation
 
-Accuracy and loss plots
-Confusion matrix (CNN version)
+- Accuracy and loss plots  
+- Confusion matrix (CNN version)
 
 ## 🛠️ Technologies Used
-Python
-TensorFlow / Keras
-NumPy, Pandas
-Matplotlib, Seaborn
+
+- Python  
+- TensorFlow / Keras  
+- NumPy, Pandas  
+- Matplotlib, Seaborn
 
 ## ✍️ Author
-Created by https://github.com/Yul04ek
 
+Created by [Yul04ek](https://github.com/Yul04ek)
 
+---
 
-This project is licensed under the MIT License.
-
+📄 This project is licensed under the **MIT License**.
 
 
 
