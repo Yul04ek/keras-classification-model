@@ -24,6 +24,10 @@ This project demonstrates two approaches to classifying handwritten digits (0–
 - Optimizer: RMSprop
 - Confusion matrix visualization using `seaborn`
 
+## 🧩 Confusion Matrix (CNN Model)
+
+![Confusion Matrix](confusion_matrix.png)
+
 ---
 
 ## 📁 Files
@@ -65,5 +69,6 @@ Created by https://github.com/Yul04ek
 
 
 This project is licensed under the MIT License.
+
 
 
