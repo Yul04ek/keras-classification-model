@@ -1,47 +1,69 @@
-# Handwritten Digit Classification Using Keras
+# 🧠 Handwritten Digit Classification Using Keras
 
-This project demonstrates how to build and train a simple neural network to classify handwritten digits (0–9) using the TensorFlow/Keras library.
+This project demonstrates two approaches to classifying handwritten digits (0–9) using the TensorFlow/Keras library and the MNIST dataset.
 
-## Description
+---
 
-The model is trained on the MNIST dataset, which contains 60,000 images for training and 10,000 images for testing.  
-A fully connected neural network is used, with Dropout layers to prevent overfitting and L2 regularization for better generalization.
+## 📊 Dataset
 
-## Technologies Used
+- **MNIST**: 60,000 training images and 10,000 test images of handwritten digits (28×28 pixels, grayscale).
 
-- Python 3.10+
-- TensorFlow / Keras
-- NumPy
-- Matplotlib
-- Scikit-learn
-- JupyterLab
+---
 
-## Getting Started
+## 🏗️ Models
 
-Clone the repository:
+### 1. Dense Neural Network (`digit_dense.py`)
+- Fully connected layers with ReLU activation
+- Dropout layers to prevent overfitting
+- L2 regularization for better generalization
+- Optimizer: Adam
 
-git clone https://github.com/your-nickname/repository-name.git  
-cd repository-name
+### 2. Convolutional Neural Network (`digit_cnn.py`)
+- Convolutional layers (`Conv2D`) with `BatchNormalization` and `MaxPooling2D`
+- Input normalization and reshaping to (28, 28, 1)
+- Optimizer: RMSprop
+- Confusion matrix visualization using `seaborn`
 
-Install dependencies:
+---
 
+## 📁 Files
+
+| File             | Description                                      |
+|------------------|--------------------------------------------------|
+| `digit_dense.py` | Dense model implementation                      |
+| `digit_cnn.py`   | CNN model with input normalization and metrics  |
+| `dense_model.h5` | Saved Dense model                               |
+| `cnn_model.h5`   | Saved CNN model                                 |
+| `requirements.txt` | Python dependencies                           |
+
+---
+
+## 📦 Installation
+
+```bash
 pip install -r requirements.txt
 
-## Usage
+## 🚀 Run
+python digit_dense.py   # for Dense model
+python digit_cnn.py     # for CNN model
 
-Download the trained model file (model.h5) and run the script to classify digits:
+## 📈 Evaluation
 
-python digit_1.py --model model.h5
+Accuracy and loss plots
+Confusion matrix (CNN version)
 
-You can also test the model on custom input images or visualize predictions using the built-in plotting functions.
 
-## Files
+## 🛠️ Technologies Used
+Python
+TensorFlow / Keras
+NumPy, Pandas
+Matplotlib, Seaborn
 
-- digit_1.py — main script for loading and testing the model  
-- model.h5 — trained model file  
-- requirements.txt — list of dependencies  
-- README.md — project documentation
+## ✍️ Author
+Created by https://github.com/Yul04ek
 
-## License
+
 
 This project is licensed under the MIT License.
+
+
